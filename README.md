@@ -1,7 +1,7 @@
 # dsh-msg-time
 
-[![npm](https://img.shields.io/npm/v/dsh-msg-time)](https://www.npmjs.com/package/dsh-msg-time)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-%3E%3D0.2.0--rc.1-4D6BFE)](https://github.com/deepseek-ai/deepseek-harness)
 
 [简体中文](./README.zh.md) · **English**
 
@@ -62,7 +62,11 @@ It saves a full tool round-trip: asking "what time is it" used to require a `dat
 ## Install
 
 ```sh
+# from npm
 dsh plugin --profile desktop add dsh-msg-time
+
+# or straight from GitHub (no npm account needed)
+dsh plugin --profile desktop add github:duxinle/dsh-msg-time
 ```
 
 Then **fully quit and relaunch the app** (not just close the window). The profile's plugin layer and the client module graph are built only at startup.

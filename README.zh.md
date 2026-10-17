@@ -1,7 +1,7 @@
 # dsh-msg-time
 
-[![npm](https://img.shields.io/npm/v/dsh-msg-time)](https://www.npmjs.com/package/dsh-msg-time)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-%3E%3D0.2.0--rc.1-4D6BFE)](https://github.com/deepseek-ai/deepseek-harness)
 
 **简体中文** · [English](./README.md)
 
@@ -61,7 +61,11 @@
 ## 安装
 
 ```sh
+# 从 npm 装
 dsh plugin --profile desktop add dsh-msg-time
+
+# 或者直接从 GitHub 装（不需要 npm 账号）
+dsh plugin --profile desktop add github:duxinle/dsh-msg-time
 ```
 
 装完**完全退出应用再打开**（不是关窗口）。profile 的插件层和客户端模块图只在启动时构建。
