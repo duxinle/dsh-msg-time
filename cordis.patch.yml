@@ -1,0 +1,8 @@
+﻿# dsh-msg-time bundle patch: one loader row.
+#
+# The host half is a no-op; it exists only so the package appears in the Loader
+# tree, which is what `dsh.client` discovery scans for a browser bundle. The
+# behavior lives in exports["./client"] (see package.json).
+- insert:
+    - id: msg-time
+      name: 'dsh-msg-time'

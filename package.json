@@ -1,0 +1,56 @@
+{
+  "name": "dsh-msg-time",
+  "version": "0.1.0",
+  "description": "Prefix every outgoing user prompt with a [user_sent_at: YYYY/MM/DD HH:mm:ss] header at send time, so the model knows exactly when you sent each message.",
+  "license": "MIT",
+  "author": "duxinle (https://github.com/duxinle)",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "timestamp",
+    "conversation",
+    "web-ui"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duxinle/dsh-msg-time.git"
+  },
+  "homepage": "https://github.com/duxinle/dsh-msg-time#readme",
+  "bugs": {
+    "url": "https://github.com/duxinle/dsh-msg-time/issues"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
